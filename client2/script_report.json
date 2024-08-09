@@ -1,0 +1,14 @@
+[
+    {
+        "report_id": 1,
+        "script": "select * from t_visit"
+    },
+    {
+        "report_id": 2,
+        "script": "SELECT * FROM t_visit INNER JOIN t_person ON t_visit.hn = t_person.hn"
+    },
+    {
+        "report_id": 3,
+        "script": "SELECT * FROM t_visit INNER JOIN t_person ON t_visit.hn = t_person.hn WHERE t_visit.vst_date BETWEEN ? and ?"
+    }
+]
